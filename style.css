@@ -126,6 +126,7 @@ h1 {
 /* Bilde Gallery */
 
 #image-track {
+  margin-top: 500px;
   display: flex;
   gap: 4vmin;
   position: absolute;
