@@ -126,10 +126,12 @@ h1 {
 /* Bilde Gallery */
 
 #image-track {
-  margin-top: 500px;
+  margin-top: 250px;
   display: flex;
   gap: 4vmin;
-  position: absolute;
+  overflow: hidden;
+  position: relative;
+
   top: 50%;
   transform: translate(0%, -50%);
 }
@@ -189,5 +191,11 @@ nav {
 }
 
 
-
-
+.image-track-wrapper {
+  padding: 40px;
+  background: linear-gradient(to right, #fff0f5, #ffe6f0);
+  border-radius: 20px;
+  max-width: 100%;
+  overflow-x: auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
