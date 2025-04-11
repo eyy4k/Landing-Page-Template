@@ -18,7 +18,7 @@ img {
 }
 
 main {
-  min-height: 100vh;
+  min-height: 93vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -144,3 +144,50 @@ h1 {
   pointer-events: none;
   transition: object-position 0.3s ease-out;
 }
+
+/* Navbar */
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background: rgba(223, 223, 223, 0.299);
+  padding-left: 15px;
+
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-left: 10px;
+}
+
+.nav-left i {
+  font-size: 1.7rem;
+  color: #222;
+  background: linear-gradient(to right, #949191, #f9c3d2);
+  background-clip: text;
+  color: transparent;
+}
+
+.logoSkrift {
+  font-size: 1.4em;
+  font-weight: 600;
+  background: linear-gradient(to right, #949191, #f9c3d2);
+  background-clip: text;
+  color: transparent;
+  font-family: 'Inter', sans-serif;
+
+}
+
+.nav-right {
+  margin-left: auto;
+  margin-right: 40px;
+  display: flex;          
+  align-items: center
+}
+
+
+
+
