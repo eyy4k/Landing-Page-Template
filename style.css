@@ -4,7 +4,16 @@
     box-sizing: border-box;
 }
 
-main { background-color: bisque; text-align: center; padding: 30px;}
+img {
+    width: 100%;
+}
+
+main {
+    background-color: bisque;
+    text-align: center;
+    padding: 30px;
+    height: 150vh;
+}
 
 h1 {
     font-size: 2.5rem;
