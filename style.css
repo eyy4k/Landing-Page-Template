@@ -1,39 +1,124 @@
+/* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  line-height: 1.6;
+  background-color: #fdf6f0;
+  color: #222;
 }
 
 img {
-    width: 100%;
+  width: 100%;
+  display: block;
 }
 
 main {
-    background-color: bisque;
-    text-align: center;
-    padding: 30px;
-    height: 100vh;
-    background-image: url(bilder/background.png);
-    background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background-image: 
+    radial-gradient(circle at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 70%),
+    url('bilder/background.png');
+  background-size: cover;
+  background-position: center;
 }
 
 h1 {
-    margin: 150px 0px 20px 0px;
-    font-size: 3.5rem;
-    background: linear-gradient(to right, #FF6B6B, #4BCFFA);
-    background-clip: text;
-    color: transparent;
-    padding-bottom: 15px;
+  font-size: 2.8rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #e06464, #55c3e8);
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 20px;
 }
 
 .p1 {
-    margin: 0px 250px 0px 250px;
-    line-height: 1.8;
- 
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 30px;
 }
 
-p {
-    background: linear-gradient(to right, #FFB6C1, #a8dde4);
-    background-clip: text;
-    color: transparent;
+.white-box {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 50px 40px;
+  border-radius: 20px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+/* Email Form */
+.email-form {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+.email-form input[type="email"] {
+    padding: 12px 20px;
+    font-size: 1rem;
+    width: 300px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    border-radius: 25px;
+    background: 
+        linear-gradient(white, white) padding-box,
+        linear-gradient(to right, #ed8c8c, #79cce8) border-box;
+    border: 2px solid transparent;
+    color: black;
+    
+    
+}
+
+.email-form input[type="email"]:focus {
+    border-color: #4BCFFA;
+}
+
+.email-form button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(to right, #ed8e8e, #7acfec);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.email-form button:hover {
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
   }
+
+  .white-box {
+    padding: 30px 20px;
+  }
+
+  .email-form {
+    flex-direction: column;
+  }
+
+  .email-form input,
+  .email-form button {
+    width: 100%;
+  }
+}
