@@ -12,11 +12,28 @@ main {
     background-color: bisque;
     text-align: center;
     padding: 30px;
-    height: 150vh;
+    height: 100vh;
+    background-image: url(bilder/background.png);
+    background-size: cover;
 }
 
 h1 {
-    font-size: 2.5rem;
-    color: #333;
+    margin: 150px 0px 20px 0px;
+    font-size: 3.5rem;
+    background: linear-gradient(to right, #FF6B6B, #4BCFFA);
+    background-clip: text;
+    color: transparent;
     padding-bottom: 15px;
 }
+
+.p1 {
+    margin: 0px 250px 0px 250px;
+    line-height: 1.8;
+ 
+}
+
+p {
+    background: linear-gradient(to right, #FFB6C1, #a8dde4);
+    background-clip: text;
+    color: transparent;
+  }
