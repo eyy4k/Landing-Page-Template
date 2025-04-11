@@ -125,17 +125,22 @@ h1 {
 
 /* Bilde Gallery */
 
-#image-track {
-  margin-top: 500px;
-  display: flex;
-  gap: 4vmin;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(0%, -50%);
-  will-change: transform;
-  transition: transform 0.3s ease-out;
+.gallery {
+  width: 100%;
+  overflow: hidden;
 }
+
+
+#image-track {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4vmin;
+  padding: 60px 20px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
 
 #image-track > .image {
   width: 40vmin;
