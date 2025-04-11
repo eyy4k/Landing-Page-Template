@@ -123,30 +123,6 @@ h1 {
   }
 }
 
-/* Bilde Gallery */
-
-#image-track {
-  margin-top: 250px;
-  display: flex;
-  gap: 4vmin;
-  overflow: hidden;
-  position: relative;
-
-  top: 50%;
-  transform: translate(0%, -50%);
-}
-
-#image-track > .image {
-  width: 40vmin;
-  height: 56vmin;
-  object-fit: cover;
-  object-position: center;
-  flex-shrink: 0;
-  user-select: none;
-  pointer-events: none;
-  transition: object-position 0.3s ease-out;
-}
-
 /* Navbar */
 
 nav {
@@ -190,12 +166,20 @@ nav {
   align-items: center
 }
 
+/* Footer */
 
-.image-track-wrapper {
-  padding: 40px;
-  background: linear-gradient(to right, #fff0f5, #ffe6f0);
-  border-radius: 20px;
-  max-width: 100%;
-  overflow-x: auto;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+.footer1 {
+  font-size: 1rem;
+  background: rgba(200, 200, 200, 0.289);
+  height: 60px;
+  padding: 20px 0;
+  text-align: center;
+  
+}
+
+.footer1>div {
+  background: linear-gradient(to top, #767575, #f9c3d2);
+  background-clip: text;
+  color: transparent;
+  font-family: 'Inter', sans-serif;
 }
