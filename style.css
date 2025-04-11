@@ -122,3 +122,35 @@ h1 {
     width: 100%;
   }
 }
+
+/* Bilde Gallery */
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  margin: 0;
+  overflow: hidden;
+}
+
+#image-track {
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  will-change: transform;
+  transition: transform 0.3s ease-out;
+}
+
+#image-track > .image {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: center;
+  flex-shrink: 0;
+  user-select: none;
+  pointer-events: none;
+  transition: object-position 0.3s ease-out;
+}
